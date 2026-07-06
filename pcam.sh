@@ -9,8 +9,8 @@ clear;
 echo -e "$GNB 
 
  Bitte wähle mit: 
-   f = Font Camara
-   b = Back Camera
+   f = Font Kamera
+   b = Back Kamera
    h = Horizontal(Cam) 
    v = Vertikal(Cam)
    s = Screen Cupture
