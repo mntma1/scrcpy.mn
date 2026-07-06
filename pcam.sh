@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-
+# Crerated: by Manfred 
+# Date: 06.07.2025:
+#
 # Colors
 source ~/bin/colors.env
 
