@@ -6,7 +6,6 @@
 <img width="228" height="492" alt="grafik" src="https://github.com/user-attachments/assets/04cea402-127c-49cb-b9e4-0ea8e0e50eac" />
 <img width="411" height="321" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
 
-
 1. Als User: Das Repository klonen
 ```
 git clone https://github.com/mntma1/scrcpy.mn
