@@ -19,8 +19,6 @@ echo -e "$GNB
    m = scrcpy Manual Page
    x = Exit (Beendet das Script) 
 $CL"
-
-echo -e "$OK $BLUB Viel Spaß beim Testen :)$CL"
 echo;
 
 function orientation {
