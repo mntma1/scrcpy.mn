@@ -8,10 +8,9 @@ PROG=scrcpy
 source ~/bin/colors.env
 
 clear;
-CAt<<intro
+cat<<intro
 
 $BLUB Viel Spaß beim Testen $CL"
-
 intro
 cat<<menu
 $GNB 
