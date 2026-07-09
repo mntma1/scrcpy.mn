@@ -5,7 +5,7 @@
 
 PROG=scrcpy
 # Colors
-source ~/bin/colors.env
+source /usr/local/bin/colors.env
 
 clear;
 echo -e "$BLUB                    Viel Spaß beim Testen $CL"
