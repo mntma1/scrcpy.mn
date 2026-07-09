@@ -5,8 +5,8 @@ PROG=scrcpy
 source ~/bin/colors.env
 
 clear;
+"$BLUB Viel Spaß beim Testen$CL"
 echo -e "$GNB 
-"$BLUB       Viel Spaß beim Testen$CL"
 
  Bitte wähle mit: 
    f = Font Camara
