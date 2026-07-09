@@ -31,7 +31,7 @@ Bescheibung ....
 ```
 3. Kopiere die Datein
 ```
-sudo cp pcam.sh colors.enc /usr/local/bin 
+sudo cp pcam.sh colors.env /usr/local/bin 
 ```
 4. Starte das Menü
 Im Terminal feuere ab: 
