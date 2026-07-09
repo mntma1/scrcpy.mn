@@ -6,6 +6,7 @@ source ~/bin/colors.env
 
 clear;
 echo -e "$GNB 
+"$BLUB       Viel Spaß beim Testen$CL"
 
  Bitte wähle mit: 
    f = Font Camara
