@@ -24,9 +24,9 @@ wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x8
 ```
 git clone https://github.com/mntma1/scrcpy.mn
 ```
-2. Installier >>scrcpy<<
+2. **scrcpy** installieren 
 ```
-Bescheibung ....
+Comming soon ....
 ```
 3. Kopiere die Datein
 ```
@@ -34,10 +34,10 @@ sudo cp pcam.sh colors.env /usr/local/bin
 ```
 4. Starte das Menü 
 ```
-# Im Terminaleuere ab:
+# Im Terminal feuere ab:
 Username$: pcam.sh
 ```
-5. Starte Apps auf deinem Phone von Hand im Terminal:
+5. Apps starten: Von Hand im Terminal:
 ```
 scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w
 ```
@@ -45,6 +45,9 @@ scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=co
 ```
 scrcpy --list-apps
 ```
-...weiter
+....Weiteres
+```
+Kommt bald
+```
 
 
