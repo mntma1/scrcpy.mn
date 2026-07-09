@@ -25,8 +25,8 @@ $CL"
 
 function orientation {
 while true; do
-    read -p "Bitte wählen (f/bh/v/c/d/s/m/x): " Ausrichtung
-    case $Ausrichtung in
+    read -p "Bitte wählen (f/bh/v/c/d/s/m/x): " Menu
+    case $Menu in
         [f]* ) $PROG --video-source=camera  --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; # Front Cam
         
         [b]* ) $PROG --video-source=camera  --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; # Back  Cam
