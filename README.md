@@ -39,7 +39,7 @@ Username$: pcam.sh
 ```
 5. Starte Apps auf deinem Phone von Hand im Terminal:
 ```
-scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w
+scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w
 ```
 6. Apps auflisten
 ```
