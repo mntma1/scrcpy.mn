@@ -33,9 +33,10 @@ Bescheibung ....
 sudo cp pcam.sh colors.env /usr/local/bin 
 ```
 4. Starte das Menü
-Im Terminal feuere ab: 
+Im Terminal
+feuere ab: 
 ```
-pcam.sh
+$USER$: pcam.sh
 ```
 5. Starte Apps auf deinem Phone von Hand im Terminal:
 ```
