@@ -8,7 +8,7 @@ PROG=scrcpy
 source ~/bin/colors.env
 
 clear;
-echo -e "$BLUB Viel Spaß beim Testen $CL"
+echo -e "$BLUB                         Viel Spaß beim Testen $CL"
 
 echo -e "$GNB
  Bitte wähle mit: 
