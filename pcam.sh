@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
+# Erstellt von: Manfred
+# Am: 09.07.2026
+# Geändert am: von:
 
 PROG=scrcpy
 # Colors
 source ~/bin/colors.env
 
 clear;
-echo -e "$BLUB 
- Viel Spaß beim Testen $CL"
-echo -e "$GNB 
+CAt<<intro
 
+$BLUB Viel Spaß beim Testen $CL"
+
+intro
+cat<<menu
+$GNB 
  Bitte wähle mit: 
    f = Font Camara
    b = Back Camera
@@ -20,7 +26,7 @@ echo -e "$GNB
    m = scrcpy Manual Page
    x = Exit (Beendet das Script) 
 $CL"
-echo;
+nenu
 
 function orientation {
 while true; do
