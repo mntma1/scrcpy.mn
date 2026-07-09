@@ -2,7 +2,7 @@
 
 PROG=scrcpy
 # Colors
-source /usr/local/bin/colors.env
+source ~/bin/colors.env
 
 clear;
 echo -e "$GNB 
