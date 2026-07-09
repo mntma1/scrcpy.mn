@@ -24,6 +24,7 @@ echo;
 
 function orientation {
 while true; do
+  clear;
     read -p "Bitte wählen (f/bh/v/c/d/s/m/x): " Ausrichtung
     case $Ausrichtung in
         [f]* ) $PROG --video-source=camera  --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; # Front Cam
