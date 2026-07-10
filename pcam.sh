@@ -34,17 +34,17 @@ while true; do
         
         [h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null&;; 
         
-        [v]* ) $PROG --video-source=camera --camera-id=0 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w&>/dev/null&;;
+        [v]* ) $PROG --video-source=camera --camera-id=0 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;;
         
-        [c]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w&>/dev/null&;;
+        [c]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w &>/dev/null&;;
         
-        [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w&>/dev/null&;;
+        [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w &>/dev/null&;;
+        
+        [e]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;;
  
-        [s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w&>/dev/null&;;
-
-        [e]* ) $PROG -display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;;
+        [s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null&;;
         
-        [m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1'&;;
+        [m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &;;
         
         [x]* ) exit;;
      
