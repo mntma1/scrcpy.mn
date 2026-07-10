@@ -41,7 +41,7 @@ while true; do
  
         [s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w&>/dev/null&;;
         
-        [m]* ) mate-terminal -e 'man scrcpy'&;;
+        [m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1'&;;
         
         [x]* ) exit;;
      
