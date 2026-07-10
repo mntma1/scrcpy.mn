@@ -18,15 +18,15 @@ echo -e "$GNB
    v = Vertikal(Cam)
    c = Screen Cupture
    d = Dateimanager(Startet den Filebrowser)
-   D = Einstellungen
+   e = Einstellungen
    s = scrcpy (Cupture only)
    m = scrcpy Manual Page
    x = Exit (Beendet das Script) 
 $CL"
 
-function orientation {
+function scrcpy-menu {
 while true; do
-    read -p "Bitte wählen (f/bh/v/c/d/s/m/x): " Menu
+    read -p "Bitte wählen (f/bh/v/c/d/e/s/m/x): " Menu
     case $Menu in
         [f]* ) $PROG --video-source=camera  --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; # Front Cam
         
@@ -39,10 +39,10 @@ while true; do
         [c]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w&>/dev/null&;;
         
         [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w&>/dev/null&;;
-
-        [S]* ) $PROG --display-id=0 --new-display=1920x1080/160 --video-codec=av1 --start-app=com.android.settings -x -w&>/dev/null;;
  
         [s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w&>/dev/null&;;
+
+        [e]* ) $PROG -display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;;
         
         [m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1'&;;
         
@@ -58,7 +58,7 @@ while true; do
      v = Vertikal
      c = Screen Cupture
      d = Dateimanager
-     D = Einstellungen
+     e = Einstellungen
      s = scrcpy (Cupture only)
      m = scrcpy Manual Page
      x = Exit (Beendet das Script) 
@@ -67,5 +67,5 @@ $CL";;
     esac
 done
 }
-orientation
+scrcpy-menu
 exit 0
