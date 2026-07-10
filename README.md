@@ -25,6 +25,9 @@ git clone https://github.com/mntma1/scrcpy.mn
 cd scrcpy.mn
 ./install.sh
 ```
+Das wars :-)
+
+
 1a. Oder **scrcpy** von Hand installieren 
 
 nano install.sh
