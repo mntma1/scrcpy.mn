@@ -12,12 +12,13 @@ echo -e "$BLUB                    Viel Spaß beim Testen $CL"
 
 echo -e "$GNB
  Bitte wähle mit: 
-   f = Font Camara
-   b = Back Camera
+   f = Font Kamera
+   b = Back Kamera
    h = Horizontal(Cam) 
    v = Vertikal(Cam)
    c = Screen Cupture
    d = Dateimanager(Startet den Filebrowser)
+   D = Einstellungen
    s = scrcpy (Cupture only)
    m = scrcpy Manual Page
    x = Exit (Beendet das Script) 
@@ -38,6 +39,8 @@ while true; do
         [c]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w&>/dev/null&;;
         
         [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w&>/dev/null&;;
+
+        [S]* ) $PROG --display-id=0 --new-display=1920x1080/160 --video-codec=av1 --start-app=com.android.settings -x -w&>/dev/null;;
  
         [s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w&>/dev/null&;;
         
@@ -49,12 +52,13 @@ while true; do
 
   Bitte antworte mit: 
  
-     f = Font Camara
-     b = Back Camera
+     f = Font Kamera
+     b = Back Kamera
      h = Horizontal
      v = Vertikal
      c = Screen Cupture
      d = Dateimanager
+     D = Einstellungen
      s = scrcpy (Cupture only)
      m = scrcpy Manual Page
      x = Exit (Beendet das Script) 
