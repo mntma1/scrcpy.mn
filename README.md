@@ -1,7 +1,5 @@
-# scrcpy.mn
-### Scrcpy - Anzeige und Steuerung Deines Android Geräts
-
-# Android Bildschirmübertragung mit scrcpy über USB oder WLAN
+# scrcpy 
+### Ermöglicht die Anzeige und Steuerung von über USB oder WLAN (über TCP/IP) angeschlossenen Android-Geräten. Es ist kein Root-Zugriff erforderlich.
 
 ## **scrcpy (v4.0)**
 
@@ -57,9 +55,12 @@ scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=co
 ```
 scrcpy --list-apps
 ```
-5. Weiteres ...
+5. Gerät über WLAN verbinden
+##### Hierzu muß das USB-Kabel eingesteckt sein 
 ```
-Comming soon
+adb tcpip 5555
+adb connect [dvice wlanIP]
+Beispiel: adb connect 192.168.1.32 
 ```
 
 
