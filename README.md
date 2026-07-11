@@ -1,9 +1,8 @@
-# scrcpy 
+# Skript pcam.sh 
 ### Ermöglicht die Anzeige und Steuerung von über USB oder WLAN (über TCP/IP) angeschlossenen Android-Geräten. Es ist kein Root-Zugriff erforderlich.
 
-## **scrcpy (v4.0)**
+**scrcpy (v4.0) Projekt-Seite** ***[hier](https://github.com/Genymobile/scrcpy)***
 
-- **Projekt-Seite** **[hier](https://github.com/Genymobile/scrcpy)**
 - **Videoanleitung** [hier](https://www.youtube.com/watch?v=c3ypUzVSYdQ)
 - EKIWI-BLOG [hier](https://ekiwi-blog.de/20466/android-bildschirmuebertragung-mit-scrcpy-ueber-usb-oder-wlan/)
 - **Download:** [scrcpy-linux-x86_64-v4.0.tar.gz](https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x86_64-v4.0.tar.gz)
