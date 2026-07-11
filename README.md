@@ -1,4 +1,4 @@
-# Skript pcam.sh 
+# scrcpy - Script: pcam.sh 
 ### Ermöglicht die Anzeige und Steuerung von über USB oder WLAN (über TCP/IP) angeschlossenen Android-Geräten. Es ist kein Root-Zugriff erforderlich.
 
 **scrcpy (v4.0) Projekt-Seite** ***[hier](https://github.com/Genymobile/scrcpy)***
