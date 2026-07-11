@@ -9,63 +9,64 @@ source /usr/local/bin/colors.env
 
 clear;
 echo -e "$BLUB                    Viel Spaß beim Testen $CL"
-
 echo -e "$GNB
- Bitte wähle mit: 
-   f = Font Kamera
+  Bitte wähle:: 
+
+   a = Desktop
    b = Back Kamera
-   h = Horizontal(Cam) 
-   v = Vertikal(Cam)
-   c = Screen Cupture
    d = Dateimanager(Startet den Filebrowser)
    e = Einstellungen
+   f = Font Kamera
+   h = Horizontal Kamera
    s = scrcpy (Cupture only)
    m = scrcpy Manual Page
-   x = Exit (Beendet das Script) 
+ x/q = Beendet das Script 
+
+
 $CL"
 
 function scrcpy-menu {
 while true; do
-    read -p "Bitte wählen (f/bh/v/c/d/e/s/m/x): " Menu
+	read -p "Bitte wählen (f/b/h/v/a/d/e/s/m/x): " Menu
     case $Menu in
-        [f]* ) $PROG --video-source=camera  --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; # Front Cam
+        [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w &>/dev/null&;;
         
-        [b]* ) $PROG --video-source=camera  --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; # Back  Cam
+	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; # Back  Cam
         
-        [h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null&;; 
+	[d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w &>/dev/null&;;
         
-        [v]* ) $PROG --video-source=camera --camera-id=0 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;;
+	[e]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;;
         
-        [c]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w &>/dev/null&;;
+	[f]* ) $PROG --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; # Front Cam
         
-        [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w &>/dev/null&;;
+	[h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null&;; 
         
-        [e]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;;
- 
-        [s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null&;;
+	[s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null&;;
         
-        [m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &;;
+	[m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &;;
         
-        [x]* ) exit;;
+	[xq]* ) exit;;
      
-        * ) clear; echo -e "$RDB
+        * ) clear;
+echo -e "$GNB  Taste: [$Menu] 
+  ist noch nicht belegt!   $CL"
 
-  Bitte antworte mit: 
+echo -e "$RDB
+  Bitte wähle stattdesen: 
  
-     f = Font Kamera
+     a = Desktop
      b = Back Kamera
-     h = Horizontal
-     v = Vertikal
-     c = Screen Cupture
      d = Dateimanager
      e = Einstellungen
+     f = Font Kamera
+     h = Horizontale Kamera
      s = scrcpy (Cupture only)
      m = scrcpy Manual Page
-     x = Exit (Beendet das Script) 
-
+   x/q = Exit / Quit (Beendet das Script) 
 $CL";;
     esac
 done
 }
+### Startet das Menü ###
 scrcpy-menu
 exit 0
