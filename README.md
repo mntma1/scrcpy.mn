@@ -26,8 +26,8 @@ cd scrcpy.mn
 ```
 Das wars :-)
 
-
-1a. Oder **scrcpy** von Hand installieren 
+----
+1a. Oder das **pcam.sh**(scrcpy Menü) von Hand installieren 
 
 nano install.sh
 ```
@@ -60,12 +60,31 @@ scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=co
 ```
 scrcpy --list-apps
 ```
+
+----
 5. Gerät über WLAN verbinden
 ##### Hierzu muß das USB-Kabel eingesteckt sein 
 ```
 adb tcpip 5555
-adb connect [dvice wlanIP]
-Beispiel: adb connect 192.168.1.32 
+adb connect 192.168.1.xxx # WLAN IP des Phone's
 ```
-
-
+6. Überprüfe die adb-Verbindungen
+```
+adb devices
+```
+Ergebnis:
+```
+List of devices attached
+fff95c0b	device
+192.168.1.xxx:5555	device # WLAN IP des Phone's
+```
+8. Ziehe jetzt das USB-Kabel ab
+```
+adb devices
+```
+Ergebnis:
+```
+List of devices attached
+192.168.1.xxx:5555	device # WLAN IP des Phone's
+```
+### Nun ist das SmartPhone mit adb über WLAN erreichbar  
