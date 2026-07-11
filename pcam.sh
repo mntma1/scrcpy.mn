@@ -18,7 +18,7 @@ echo -e "$GNB
    e = Einstellungen
    f = Font Kamera
    h = Horizontal Kamera
-   s = scrcpy (Cupture only)
+   s = scrcpy (Capture only)
    m = scrcpy Manual Page
  x/q = Beendet das Script 
 
@@ -29,7 +29,7 @@ function scrcpy-menu {
 while true; do
 	read -p "Bitte wählen (f/b/h/v/a/d/e/s/m/x): " Menu
     case $Menu in
-        [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w &>/dev/null&;;
+   [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w &>/dev/null&;;
         
 	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; # Back  Cam
         
@@ -49,7 +49,7 @@ while true; do
      
         * ) clear;
 echo -e "$GNB  Taste: [$Menu] 
-  ist noch nicht belegt!   $CL"
+  ist noch nicht belegt!$CL"
 
 echo -e "$RDB
   Bitte wähle stattdesen: 
@@ -60,7 +60,7 @@ echo -e "$RDB
      e = Einstellungen
      f = Font Kamera
      h = Horizontale Kamera
-     s = scrcpy (Cupture only)
+     s = scrcpy (Capture only)
      m = scrcpy Manual Page
    x/q = Exit / Quit (Beendet das Script) 
 $CL";;
