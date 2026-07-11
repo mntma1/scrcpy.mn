@@ -18,7 +18,7 @@ echo -e "$GNB
    e = Einstellungen
    f = Font Kamera
    h = Horizontal Kamera
-   s = scrcpy (Cupture only)
+   s = scrcpy (Capture only)
    m = scrcpy Manual Page
  x/q = Beendet das Script 
 
@@ -60,7 +60,7 @@ echo -e "$RDB
      e = Einstellungen
      f = Font Kamera
      h = Horizontale Kamera
-     s = scrcpy (Cupture only)
+     s = scrcpy (Capture only)
      m = scrcpy Manual Page
    x/q = Exit / Quit (Beendet das Script) 
 $CL";;
