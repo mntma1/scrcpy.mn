@@ -4,6 +4,7 @@
 # Geändert am: von:
 
 PROG=scrcpy
+TERMINAL=xfce4-terminal
 # Colors
 source /usr/local/bin/colors.env
 
@@ -12,38 +13,41 @@ echo -e "$BLUB                    Viel Spaß beim Testen $CL"
 echo -e "$GNB
   Bitte wähle:: 
 
-   a = Desktop
+   a = Android Desktop(Fullscreen)
+   f = Font Kamera
    b = Back Kamera
+   h = Horizontal Kamera
    d = Dateimanager(Startet den Filebrowser)
    e = Einstellungen
-   f = Font Kamera
-   h = Horizontal Kamera
    s = scrcpy (Capture only)
    m = scrcpy Manual Page
- x/q = Beendet das Script 
+   t = Lokales Terminal
+ x,q = Beendet das Script 
 
 
 $CL"
 
 function scrcpy-menu {
 while true; do
-	read -p "Bitte wählen (f/b/h/v/a/d/e/s/m/x): " Menu
+	read -p "Bitte wählen (a/f/b/h/d/e/s/m/t/x,q): " Menu
     case $Menu in
-   [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w &>/dev/null&;;
+   [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w -f &>/dev/null&;; # Android Desktop
+	
+   [f]* ) $PROG --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; #Front Kamera
         
-	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; # Back  Cam
+	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; #Back Kamera
         
-	[d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w &>/dev/null&;;
+	[h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null&;; #Horizontale Kamera 
+
+   [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w &>/dev/null&;; #Dateimanager
         
-	[e]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;;
+	[e]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w &>/dev/null&;; #Android Einstellungen
+              
+	[s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null&;; #Capture SmartPhone Screen
         
-	[f]* ) $PROG --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; # Front Cam
-        
-	[h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null&;; 
-        
-	[s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null&;;
-        
-	[m]* ) xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &;;
+	[m]* ) $TERMINAL -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &;; #scrcpy Manual Page
+
+   [t]* ) $TERMINAL &;; #Loakales Terminal
         
 	[xq]* ) exit;;
      
@@ -54,15 +58,16 @@ echo -e "$GNB  Taste: [$Menu]
 echo -e "$RDB
   Bitte wähle stattdesen: 
  
-     a = Desktop
+     a = Android Desktop(Fullscreen)
+     f = Font Kamera
      b = Back Kamera
+     h = Horizontale Kamera
      d = Dateimanager
      e = Einstellungen
-     f = Font Kamera
-     h = Horizontale Kamera
      s = scrcpy (Capture only)
      m = scrcpy Manual Page
-   x/q = Exit / Quit (Beendet das Script) 
+     t = Lokales Terminal
+   x,q = Exit / Quit (Beendet das Script) 
 $CL";;
     esac
 done
