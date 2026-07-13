@@ -87,4 +87,4 @@ Ergebnis:
 List of devices attached
 192.168.1.xxx:5555	device # WLAN IP des Phone's
 ```
-### Nun ist das SmartPhone mit adb über WLAN erreichbar  
+### Nun ist das SmartPhone mit scrcpy über WLAN erreichbar  
