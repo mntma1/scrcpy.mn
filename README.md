@@ -50,7 +50,7 @@ exit 0
 2. Starte das Menü 
 ```
 # Im Terminal feuere ab:
-Username$: pcam.sh
+Benutzer$: pcam.sh
 ```
 3. Apps starten: Von Hand im Terminal:
 ```
@@ -85,6 +85,6 @@ adb devices
 Ergebnis:
 ```
 List of devices attached
-192.168.1.xxx:5555	device # WLAN IP des Phone's
+192.168.1.xxx:5555 device # WLAN IP des Phone's
 ```
 ### Nun ist das SmartPhone mit scrcpy über WLAN erreichbar  
