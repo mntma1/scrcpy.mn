@@ -33,9 +33,9 @@ while true; do
     case $Menu in
    [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w -f &>/dev/null&;; # Android Desktop
 	
-   [f]* ) $PROG --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 -w &>/dev/null&;; #Front Kamera
+   [f]* ) $PROG --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 --background-color=#000 -w &>/dev/null&;; #Front Kamera
         
-	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 -w &>/dev/null&;; #Back Kamera
+	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 --background-color=#000 -w &>/dev/null&;; #Back Kamera
         
 	[h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null&;; #Horizontale Kamera 
 
