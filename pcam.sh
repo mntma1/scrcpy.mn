@@ -16,7 +16,7 @@ echo -e "$GNB
   Bitte wähle:: 
 
    a = Android Desktop(Fullscreen)
-   f = Font Kamera
+   f = Front Kamera
    b = Back Kamera
    h = Horizontal Kamera
    d = Dateimanager(Startet den Filebrowser)
@@ -64,7 +64,7 @@ echo -e "$RDB
   Bitte wähle stattdesen: 
  
      a = Android Desktop(Fullscreen)
-     f = Font Kamera
+     f = Front Kamera
      b = Back Kamera
      h = Horizontale Kamera
      d = Dateimanager
