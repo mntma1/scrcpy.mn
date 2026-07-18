@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# Created by Manfred
+# Date: 18.07.26 at 09:28 pm
+# Bitte installiert yad
+# sudo apt install yad 
+
 BUTTON1="scrcpy --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 --background-color=#000 -w" #Front Kamera
 BUTTON2="scrcpy --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 --background-color=#000 -w" #Back Kamera
 BUTTON3="scrcpy --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w" #Horizontale Kamera
@@ -11,7 +16,6 @@ BUTTON9="scrcpy --display-id=0 --new-display=800x600/160 --turn-screen-off --dis
 BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1'" # Scrcpy Manpage 
 BUTTON11="xfce4-terminal" # Terminal
 
-#yad --center --undecorated --skip-taskbar \
 yad --title="Scrcpy Menu" \
     --button="Front Kamera:$BUTTON1" \
     --button="Back Kanmera:$BUTTON2" \
