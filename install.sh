@@ -3,11 +3,11 @@
 # Date: 10.07.26 at 02:45 am
 
 sudo apt install adb fastboot;
-sudo cp -v pcam.sh colors.env /usr/local/bin;
+sudo cp -fv pcam-yad.sh pcam.sh colors.env /usr/local/bin;
 wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x86_64-v4.0.tar.gz;
 tar xvzf scrcpy-linux-x86_64-v4.0.tar.gz;
-sudo cp -av scrcpy-linux-x86_64-v4.0 /usr/local;
-sudo ln -s /usr/local/scrcpy-linux-x86_64-v4.0/scrcpy /usr/local/bin/scrcpy;
+sudo cp -afv scrcpy-linux-x86_64-v4.0 /usr/local;
+sudo ln -sf /usr/local/scrcpy-linux-x86_64-v4.0/scrcpy /usr/local/bin/scrcpy;
 cd ~/;
 /usr/local/bin/pcam.sh;
 exit 0
