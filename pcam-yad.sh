@@ -12,7 +12,7 @@ BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1'" # Scrcpy Manp
 BUTTON11="xfce4-terminal" # Terminal
 
 #yad --center --undecorated --skip-taskbar \
-yad --list --title="Scrcpy Menu" \
+yad --title="Scrcpy Menu" \
     --button="Front Kamera:$BUTTON1" \
     --button="Back Kanmera:$BUTTON2" \
     --button="Horiz. Kamera:$BUTTON3" \
