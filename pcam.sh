@@ -25,6 +25,7 @@ echo -e "$GNB
    m = scrcpy Manual Page
    t = Lokales Terminal
    w = Webcam
+   z = Wetter
  x,q = Beendet das Script 
 
 
@@ -53,6 +54,8 @@ $CL"
    [w]* ) scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playbac &>/dev/null&
           echo -e "$CYNB  .....Sound is working now.  $CL ";sleep 3;    
    ;;
+   [z]* ) $PROG --display-id=0 --new-display=800x600/160 --turn-screen-off --disable-screensaver --show-touches --video-codec=av1 --start-app=com.weawow -x -w -f &>/dev/null&
+   ;;
 	[xq]* ) exit 0
    ;;
      
@@ -73,8 +76,9 @@ echo -e "$RDB
      m = scrcpy Manual Page
      t = Lokales Terminal
      w = Webcam
+     z = Wetter
    x,q = Exit / Quit (Beendet das Script) 
-$CL";sleep 3 ;;
+$CL";sleep 3;;
     esac
 done
 }
