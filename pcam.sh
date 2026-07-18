@@ -50,11 +50,8 @@ $CL"
    ;;
    [t]* ) $TERMINAL &
    ;;
-   [w]* ) echo -e  "$CYNB 
-              
-   ....coming soon => mobile Phone as Webcam :-)
-              
-           $CL";sleep 3 # FP4 als WebCam    
+   [w]* ) scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playbac &>/dev/null&
+          echo -e "$CYNB  .....Sound comming soon $CL ";sleep 3;    
    ;;
 	[xq]* ) exit 0
    ;;
