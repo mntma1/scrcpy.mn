@@ -31,7 +31,7 @@ echo -e "$GNB
 
 $CL"
 
-	read -p "Bitte wählen (a/f/b/h/d/e/s/m/t/w/x,q): " Menu
+	read -p "Bitte wählen (a/f/b/h/d/e/s/m/t/w/z/x,q): " Menu
     case $Menu in
    [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w -f &>/dev/null& # Android Desktop
 	;;
