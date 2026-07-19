@@ -11,7 +11,8 @@ BUTTON4="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w
 BUTTON5="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w -f" #Dateimanager
 BUTTON6="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w -f" #Android Einstellungen
 BUTTON7="scrcpy --display-id=0 --max-fps=60 --print-fps -w" #Capture SmartPhone Screen
-BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playback" # Webcam
+#BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=0 --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playback" # Webcam
+BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --orientation=180 --v4l2-sink=/dev/video0 --no-playback" # Webcam
 BUTTON9="scrcpy --display-id=0 --new-display=800x600/160 --turn-screen-off --disable-screensaver --show-touches --video-codec=av1 --start-app=com.weawow -x -w -f" #Wetter
 BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-v4.0/scrcpy.1'" # Scrcpy Manpage 
 BUTTON11="xfce4-terminal" # Terminal
