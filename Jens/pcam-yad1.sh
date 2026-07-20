@@ -33,5 +33,5 @@ yad --title "Scrcpy Menu" --text "     Benutze deine Handykamera und mehr ..." -
     --field="GNOME Terminal":fbtn "$BUTTON12" \
     --button="Ende:0" \
     &>/home/manfred/Git/Jens/error-log&
-exit 0 &>/home/manfred/Git/Jens/exit.log
+exit 0
 
