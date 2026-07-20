@@ -14,8 +14,10 @@ wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x8
 
 <img width="334" height="190" alt="grafik" src="https://github.com/user-attachments/assets/dcd0ea38-aac1-4d49-94b0-6875ba95d368" />
 <img width="334" height="190" alt="grafik" src="https://github.com/user-attachments/assets/140fb496-564d-4284-a025-e97b016cdbba" />
-<img width="228" height="492" alt="grafik" src="https://github.com/user-attachments/assets/04cea402-127c-49cb-b9e4-0ea8e0e50eac" />
 <img width="411" height="321" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
+<img width="358" height="324" alt="pcam-yad1" src="https://github.com/user-attachments/assets/2228d4af-3e8a-4115-be14-b422c4b87b1f" />
+
+
 
 1. Als User: Das Repository klonen und **scrcpy** installieren 
 ```
