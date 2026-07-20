@@ -7,7 +7,7 @@
 # Bitte installiert yad
 # sudo apt install yad 
 #
-DEBUGFILE=/home/manfred/Git/Jens/debug.log
+DEBUGFILE=$HOME/Git/Jens/debug.log
 BUTTON1="scrcpy --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 --background-color=#000 -w" #Front Kamera
 BUTTON2="scrcpy --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 --background-color=#000 -w" #Back Kamera
 BUTTON3="scrcpy --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w" #Horizontale Kamera
