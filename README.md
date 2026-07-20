@@ -14,22 +14,27 @@ wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x8
 
 <img width="334" height="190" alt="grafik" src="https://github.com/user-attachments/assets/dcd0ea38-aac1-4d49-94b0-6875ba95d368" />
 <img width="334" height="190" alt="grafik" src="https://github.com/user-attachments/assets/140fb496-564d-4284-a025-e97b016cdbba" />
+
+
+```
+        1. Konsole Menü                           2. App Dateimanger
+```
+
 <img width="411" height="321" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
 <img width="358" height="324" alt="pcam-yad1" src="https://github.com/user-attachments/assets/2228d4af-3e8a-4115-be14-b422c4b87b1f" />
 
-
-
-1. Als User: Das Repository klonen und **scrcpy** installieren 
+```
+            3. Android Desktop                                  4.YAD Menü**
+```
+## 1. Als User: Das Repository klonen und **scrcpy** installieren 
 ```
 git clone https://github.com/mntma1/scrcpy.mn
 
 cd scrcpy.mn
 ./install.sh
 ```
-Das wars :-)
-
-----
-1a. Oder das **pcam.sh**(scrcpy Menü) von Hand installieren 
+## Das wars :-)  
+## 1a. Oder das **pcam.sh**(scrcpy Menü) von Hand installieren 
 
 nano install.sh
 ```
@@ -49,28 +54,28 @@ cd ~/
 exit 0
 ```
 
-2. Starte das Menü 
+## 2. Starte das Menü 
 ```
 # Im Terminal feuere ab:
 Benutzer$: pcam.sh
 ```
-3. Apps starten: Von Hand im Terminal:
+## 3. Apps starten: Von Hand im Terminal:
 ```
 scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w
 ```
-4. Apps auflisten
+## 4. Apps auflisten
 ```
 scrcpy --list-apps
 ```
 
 ----
-5. Gerät über WLAN verbinden
+## 5. Gerät über WLAN verbinden
 ##### Hierzu muß das USB-Kabel eingesteckt sein 
 ```
 adb tcpip 5555
 adb connect 192.168.1.xxx # WLAN IP des Phone's
 ```
-6. Überprüfe die adb-Verbindungen
+## 6. Überprüfe die adb-Verbindungen
 ```
 adb devices
 ```
@@ -80,7 +85,7 @@ List of devices attached
 fff95c0b	device
 192.168.1.xxx:5555	device # WLAN IP des Phone's
 ```
-8. Ziehe jetzt das USB-Kabel ab
+## 8. Ziehe jetzt das USB-Kabel ab
 ```
 adb devices
 ```
