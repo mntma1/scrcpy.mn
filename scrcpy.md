@@ -70,7 +70,7 @@ MOD+f, F11
   In den Vollbildmodus wechseln
 ```
 
-## pcam.sh:  [Click to open this file](../_resources/pcam.sh)
+## pcam.sh:  [Click to open this file](pcam.sh)
 
 ```bash
 #!/usr/bin/env bash
