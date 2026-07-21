@@ -1,11 +1,11 @@
-
-!/usr/bin/env bash
+#!/usr/bin/env bash
 # Created by Manfred
 # Date: 18.07.26 at 09:28 pm
 # Changed by Jens at 19.07.2026
 # Changed by Manfred at 20.07.2026
 # Bitte installiert yad
-# sudo apt install yad 
+#
+#sudo apt install yad -y
 #
 DEBUGFILE=$HOME/Git/Jens/debug.log
 BUTTON1="scrcpy --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 --background-color=#000 -w" #Front Kamera
@@ -35,6 +35,6 @@ yad --title "Scrcpy Menu" --text "     Benutze deine Handykamera und mehr ..." -
     --field="XFCE4 Terminal":fbtn "$BUTTON11" \
     --field="GNOME Terminal":fbtn "$BUTTON12" \
     --button="Ende:0" \
-    &>$DEBUGFILE&
+    &>/dev/null&
 exit 0
 
