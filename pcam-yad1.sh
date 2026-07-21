@@ -20,6 +20,7 @@ BUTTON9="scrcpy --display-id=0 --new-display=800x600/160 --turn-screen-off --dis
 BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-linux-x86_64-v4.0/scrcpy.1'" # Scrcpy Manpage 
 BUTTON11="xfce4-terminal" # xfce4 Terminal
 BUTTON12="gnome-terminal" # Gnome Terminal
+BUTTON13="firefox https://meet.jit.si/scrpcymmannemaus" # Gnome Terminal
 
 yad --title "Scrcpy Menu" --text "     Benutze deine Handykamera und mehr ..." --width 350 --height 250 --form --columns 2 \
     --field="Front Kamera":fbtn "$BUTTON1" \
@@ -34,6 +35,7 @@ yad --title "Scrcpy Menu" --text "     Benutze deine Handykamera und mehr ..." -
     --field="Scrcpy Manpage":fbtn "$BUTTON10" \
     --field="XFCE4 Terminal":fbtn "$BUTTON11" \
     --field="GNOME Terminal":fbtn "$BUTTON12" \
+    --field="VC mit Manne Maus":fbtn "$BUTTON13" \
     --button="Ende:0" \
     &>/dev/null&
 exit 0
