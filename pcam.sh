@@ -19,12 +19,12 @@ echo -e "$GNB
    b = Rückw. Kamera
    h = Horizontale Kamera
    d = Dateimanager(Startet den Filebrowser)
-   e = Andrid Einstellungen
+   e = Android Einstellungen
    s = Display erfassen
    m = Scrcpy Man Page
    t = XFCE4 Terminal
    w = Webcam
-   z = Wetter weaWOW
+   z = weaWOW Wetter APP
  x,q = Beendet das Script
 $CL"
 
