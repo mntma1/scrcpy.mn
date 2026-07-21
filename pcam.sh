@@ -14,50 +14,47 @@ clear;
 echo -e "$BLUB                    Viel Spaß beim Testen $CL"
 echo -e "$GNB
   Bitte wähle:: 
-
-   a = Android Desktop(Fullscreen)
+   a = Android Desktop (in Vollbild)
    f = Front Kamera
-   b = Back Kamera
-   h = Horizontal Kamera
+   b = Rückw. Kamera
+   h = Horizontale Kamera
    d = Dateimanager(Startet den Filebrowser)
-   e = Einstellungen
-   s = scrcpy (Capture only)
-   m = scrcpy Manual Page
-   t = Lokales Terminal
+   e = Andrid Einstellungen
+   s = Display erfassen
+   m = Scrcpy Man Page
+   t = XFCE4 Terminal
    w = Webcam
-   z = Wetter
- x,q = Beendet das Script 
-
-
+   z = Wetter weaWOW
+ x,q = Beendet das Script
 $CL"
 
 	read -p "Bitte wählen (a/f/b/h/d/e/s/m/t/w/z/x,q): " Menu
     case $Menu in
    [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w -f &>/dev/null& # Android Desktop
-	;;
+	;; # Android Desktop(Fullscreen)
    [f]* ) $PROG --video-source=camera --camera-facing=front --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=270 --background-color=#000 -w &>/dev/null& #Front Kamera
-   ;;
+   ;; # Frobt Camera
 	[b]* ) $PROG --video-source=camera --camera-facing=back --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=90 --background-color=#000 -w &>/dev/null& #Back Kamera
-   ;;
+   ;; # Back Camera
 	[h]* ) $PROG --video-source=camera --camera-id=1 --camera-fps=30 --camera-size=1920x1080 --no-audio --orientation=0 -w &>/dev/null& #Horizontale Kamera 
-   ;;
+   ;; # Horizl. Camera
    [d]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w -f &>/dev/null& #Dateimanager
-   ;;
+   ;; # Dateimanager
 	[e]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w -f &>/dev/null& #Android Einstellungen
-   ;;
+   ;; # Andorid Einstellungen 
 	[s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null& #Capture SmartPhone Screen
-   ;;    
+   ;; # Display erfassen (Capture)
 	[m]* ) $TERMINAL -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &
-   ;;
+   ;; # Scrcly Manpage
    [t]* ) $TERMINAL &
-   ;;
-   [w]* ) scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playbac &>/dev/null&
-          echo -e "$CYNB  .....Sound is working now.  $CL ";sleep 3;    
-   ;;
+   ;; # XFCE4 Terminal
+   [w]* ) $PROG --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playbac &>/dev/null&
+          echo -e "$CYNB  .....Jetzt sogar mit Ton.  $CL ";sleep 5;    
+   ;; # Cell Phone as Webcam
    [z]* ) $PROG --display-id=0 --new-display=800x600/160 --turn-screen-off --disable-screensaver --show-touches --video-codec=av1 --start-app=com.weawow -x -w -f &>/dev/null&
-   ;;
-	[xq]* ) exit 0
-   ;;
+   ;; # Weather Appp weaWOW
+  [xq]* ) exit 0
+   ;; # Exit this Script
      
         * ) clear;
 echo -e "$GNB  Taste: [$Menu] 
@@ -65,18 +62,17 @@ echo -e "$GNB  Taste: [$Menu]
 
 echo -e "$RDB
   Bitte wähle stattdesen: 
- 
-     a = Android Desktop(Fullscreen)
+     a = Android Desktop (in Vollbild)
      f = Front Kamera
-     b = Back Kamera
+     b = Rüchw. Kamera
      h = Horizontale Kamera
      d = Dateimanager
      e = Einstellungen
-     s = scrcpy (Capture only)
-     m = scrcpy Manual Page
-     t = Lokales Terminal
+     s = Display erfassen (Capture)
+     m = Scrcpy Man Page
+     t = XFCE4 Terminal
      w = Webcam
-     z = Wetter
+     z = Wetter weaWOW
    x,q = Exit / Quit (Beendet das Script) 
 $CL";sleep 3;;
     esac
