@@ -22,7 +22,7 @@ BUTTON11="xfce4-terminal" # xfce4 Terminal
 BUTTON12="gnome-terminal" # Gnome Terminal
 BUTTON13="firefox https://meet.jit.si/scrpcymmannemaus" # Gnome Terminal
 
-yad --title " Scrcpy Menu" --text "Benutze deine Handykamera als Webcam und mehr." --width 360 --height 250 --form --columns 2 \
+yad --title " Scrcpy Menu" --text "Benutze deine Handykamera als Webcam und mehr." --width 360 --height 250 --form --columns 2 --buttons-layout=center \
     --field="Front Kamera":fbtn "$BUTTON1" \
     --field="Back Kanmera":fbtn "$BUTTON2" \
     --field="Horiz. Kamera":fbtn "$BUTTON3" \
