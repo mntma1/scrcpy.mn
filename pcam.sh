@@ -44,7 +44,7 @@ $CL"
    ;; # Andorid Einstellungen 
 	[s]* ) $PROG --display-id=0 --max-fps=60 --print-fps -w &>/dev/null& #Capture SmartPhone Screen
    ;; # Display erfassen (Capture)
-	[m]* ) $TERMINAL -e 'man /usr/local/scrcpy-v4.0/scrcpy.1' &
+	[m]* ) $TERMINAL -e 'man /usr/local/usr/local/scrcpy-linux-x86_64-v4.0/scrcpy.1' &
    ;; # Scrcly Manpage
    [t]* ) $TERMINAL &
    ;; # XFCE4 Terminal
