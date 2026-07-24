@@ -57,7 +57,7 @@ $CL"
    ;; # Exit this Script
      
         * ) clear;
-echo -e "$GNB  Taste: [$Menu] 
+echo -e "$CYNB  Taste: [$Menu] 
   ist noch nicht belegt!$CL"
 
 echo -e "$RDB
