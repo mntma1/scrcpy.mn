@@ -5,6 +5,8 @@
 
 PROG=scrcpy
 TERMINAL=xfce4-terminal
+BROWSER1=firefox
+URL1='https://github.com/Genymobile/scrcpy'
 # Colors
 source /usr/local/bin/colors.env
 
@@ -25,6 +27,7 @@ echo -e "$GNB
    t = XFCE4 Terminal
    w = Webcam
    z = weaWOW Wetter APP
+   g = scrcpy (v4.1) Github Projekt-Seite
  x,q = Beendet das Script
 $CL"
 
@@ -53,6 +56,8 @@ $CL"
    ;; # Cell Phone as Webcam
    [z]* ) $PROG --display-id=0 --new-display=800x600/160 --turn-screen-off --disable-screensaver --show-touches --video-codec=av1 --start-app=com.weawow -x -w -f &>/dev/null&
    ;; # Weather Appp weaWOW
+   [g]* ) $BROWSER1 $URL1 &
+   ;; # scrcpy (v4.1) Github Projekt Seite 
   [xq]* ) exit 0
    ;; # Exit this Script
      
@@ -72,7 +77,7 @@ echo -e "$RDB
      m = Scrcpy Man Page
      t = XFCE4 Terminal
      w = Webcam
-     z = Wetter weaWOW
+     g = scrcpy (v4.1) Github Projekt-Seite
    x,q = Exit / Quit (Beendet das Script) 
 $CL";sleep 3;;
     esac
