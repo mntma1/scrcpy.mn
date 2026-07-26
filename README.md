@@ -20,8 +20,9 @@ wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x8
         1. Konsole Menü                           2. App Dateimanger
 ```
 
-<img width="411" height="321" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
-<img width="358" height="324" alt="pcam-yad1" src="https://github.com/user-attachments/assets/2228d4af-3e8a-4115-be14-b422c4b87b1f" />
+<img width="550" height="400" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
+<img width="280" height="400" alt="grafik" src="https://github.com/user-attachments/assets/7b12f518-3125-491e-a612-e1e28782a106" />
+
 
 ```
             3. Android Desktop                                  4.YAD Menü**
