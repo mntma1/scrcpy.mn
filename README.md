@@ -1,5 +1,20 @@
 # scrcpy - Script: pcam.sh 
 ### Ermöglicht die Anzeige und Steuerung von über USB oder WLAN (über TCP/IP) angeschlossenen Android-Geräten. Es ist kein Root-Zugriff erforderlich.
+<img width="527" height="429" alt="grafik" src="https://github.com/user-attachments/assets/a165835d-281f-4b51-8251-e90f4e16a30a" />
+<img width="450" height="426" alt="grafik" src="https://github.com/user-attachments/assets/140fb496-564d-4284-a025-e97b016cdbba" />
+
+```
+                      1. Konsole Menü                                              2. App Dateimanger
+```
+
+<img width="550" height="400" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
+<img width="280" height="400" alt="grafik" src="https://github.com/user-attachments/assets/7b12f518-3125-491e-a612-e1e28782a106" />
+
+
+```
+                        3. Android Desktop                                     4.YAD Menü
+```  
+
 
 **scrcpy (v4.0) Projekt-Seite** ***[hier](https://github.com/Genymobile/scrcpy)***
 
@@ -12,21 +27,6 @@
 # mit wget im Terminal:
 wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x86_64-v4.0.tar.gz
 ```
-
-<img width="384" height="259" alt="grafik" src="https://github.com/user-attachments/assets/dcd0ea38-aac1-4d49-94b0-6875ba95d368" />
-<img width="400" height="260" alt="grafik" src="https://github.com/user-attachments/assets/140fb496-564d-4284-a025-e97b016cdbba" />
-
-```
-        1. Konsole Menü                           2. App Dateimanger
-```
-
-<img width="550" height="400" alt="grafik" src="https://github.com/user-attachments/assets/f6d7ef22-2a21-48c6-a8ca-1ea0b38ffd6a" />
-<img width="280" height="400" alt="grafik" src="https://github.com/user-attachments/assets/7b12f518-3125-491e-a612-e1e28782a106" />
-
-
-```
-                        3. Android Desktop                                     4.YAD Menü
-```  
 
 ## 1. Als User: Das Repository klonen und **scrcpy** installieren 
 ```
