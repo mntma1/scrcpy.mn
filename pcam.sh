@@ -34,7 +34,7 @@ echo -e "$GNB
  x,q = Beendet das Script
 $CL"
 
-	read -p "Bitte wählen (a/f/b/h/d/e/s/m/t/w/z/g/l/x,q): " Menu
+	read -p "Bitte wählen (a/f/b/h/d/e/s/m/t/w/z/g/l/v/x,q): " Menu
     case $Menu in
    [a]* ) $PROG --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w -f &>/tmp/debug.log& # Android Desktop
 	;; # Android Desktop(Fullscreen)
@@ -85,6 +85,7 @@ echo -e "$RDB
      t = XFCE4 Terminal
      w = Webcam
      g = scrcpy (v4.1) Github Projekt-Seite
+     l = Show Log
      v = Video Chat mit Manne Maus
    x,q = Exit / Quit (Beendet das Script) 
 $CL";sleep 3;;
