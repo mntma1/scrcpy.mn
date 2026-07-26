@@ -7,6 +7,7 @@ PROG=scrcpy
 TERMINAL=xfce4-terminal
 BROWSER1=firefox
 URL1='https://github.com/Genymobile/scrcpy'
+URL2='https://meet.jit.si/scrpcymmannemaus'
 # Colors
 source /usr/local/bin/colors.env
 touch /tmp/debug.log 
@@ -29,6 +30,7 @@ echo -e "$GNB
    z = weaWOW Wetter APP
    g = scrcpy (v4.1) Github Projekt-Seite
    l = Show Log
+   v = Video Chat mit Manne Maus
  x,q = Beendet das Script
 $CL"
 
@@ -61,6 +63,8 @@ $CL"
    ;; # scrcpy (v4.1) Github Projekt Seite 
    [l]* ) $TERMINAL -e 'tail -n80 -f /tmp/debug.log'
    ;;
+   [v]* ) $BROWSER1 $URL2&
+   ;; # Video Chat mit Manne Maus 
   [xq]* ) exit 0
    ;; # Exit this Script
      
@@ -81,6 +85,7 @@ echo -e "$RDB
      t = XFCE4 Terminal
      w = Webcam
      g = scrcpy (v4.1) Github Projekt-Seite
+     v = Video Chat mit Manne Maus
    x,q = Exit / Quit (Beendet das Script) 
 $CL";sleep 3;;
     esac
