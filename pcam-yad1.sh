@@ -3,7 +3,7 @@
 # Date: 18.07.26 at 09:28 pm
 # Changed by Jens at 19.07.2026 +XFCE4 Terminal
 # Changed by Manfred at 20.07.2026 +Video Chat mit Manne Maus
-# Changed by Manfred at 26.07.2026 +Scrcpy (v4.1) Github, Logfile
+# Changed by Manfred at 26.07.2026 +Scrcpy (v4.1) Github, +Logfile, BUTTONS neu angeordnet
 #
 #
 DEBUGFILE=/tmp/debug.log
@@ -23,25 +23,25 @@ BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-linux-x86_64-v4.1/scrcpy.1'" 
 BUTTON11="xfce4-terminal" # xfce4 Terminal
 BUTTON12="gnome-terminal" # Gnome Terminal
 BUTTON13="firefox https://meet.jit.si/scrpcymmannemaus" # Gnome Terminal
-
+BUTTON14="$BROWSER1 $URL1"
+BUTTON15="xfce4-terminal -e 'tail -n80 -f $DEBUGFILE'"
 touch $DEBUGFILE
 yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und mehr..." --width 360 --height 250 --form --columns 2 --buttons-layout=center \
-    --field="Front Kamera":fbtn "$BUTTON1" \
-    --field="Back Kanmera":fbtn "$BUTTON2" \
-    --field="Horiz. Kamera":fbtn "$BUTTON3" \
-    --field="Webcam":fbtn "$BUTTON8" \
-    --field="Android Desktop":fbtn "$BUTTON4" \
-    --field="Dateimanager":fbtn "$BUTTON5" \
-    --field="Android Setup":fbtn "$BUTTON6" \
-    --field="Handy Screen":fbtn "$BUTTON7" \
-    --field="Wetter":fbtn "$BUTTON9" \
-    --field="Scrcpy Manpage":fbtn "$BUTTON10" \
-    --field="XFCE4 Terminal":fbtn "$BUTTON11" \
-    --field="GNOME Terminal":fbtn "$BUTTON12" \
-    --field="VC mit Manne Maus":fbtn "$BUTTON13" \
-    --field="Scrcpy (v4.1) Github":fbtn "$BROWSER1 $URL1" \
-    --field="Log":fbtn "xfce4-terminal -e 'tail -n80 -f $DEBUGFILE'" \
+    --field="Front Kamera":fbtn         "$BUTTON1" \
+    --field="Back Kanmera":fbtn         "$BUTTON2" \
+    --field="Horiz. Kamera":fbtn        "$BUTTON3" \
+    --field="Webcam":fbtn               "$BUTTON8" \
+    --field="Android Desktop":fbtn      "$BUTTON4" \
+    --field="Dateimanager":fbtn         "$BUTTON5" \
+    --field="Android Setup":fbtn        "$BUTTON6" \
+    --field="Handy Screen":fbtn         "$BUTTON7" \
+    --field="Wetter":fbtn               "$BUTTON9" \
+    --field="Scrcpy Manpage":fbtn       "$BUTTON10" \
+    --field="XFCE4 Terminal":fbtn       "$BUTTON11" \
+    --field="GNOME Terminal":fbtn       "$BUTTON12" \
+    --field="VC mit Manne Maus":fbtn    "$BUTTON13" \
+    --field="Scrcpy (v4.1) Github":fbtn "$BUTTON14" \
+    --field="Log":fbtn                  "$BUTTON15" \
     --button="Ende:0" \
     &>$DEBUGFILE&
 exit 0
-
