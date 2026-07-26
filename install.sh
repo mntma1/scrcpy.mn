@@ -3,6 +3,7 @@
 # Date: 10.07.26 at 02:45 am
 source ./colors.env
 
+sudo rm -rfv /usr/local/scrcpy-linux*
 sudo apt install adb fastboot yad -y;
 sudo cp -fv pcam-yad1.sh pcam-yad-long.sh webcam-yad.sh pcam.sh colors.env /usr/local/bin;
 cd /tmp
