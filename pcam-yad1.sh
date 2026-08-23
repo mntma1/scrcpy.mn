@@ -24,7 +24,8 @@ BUTTON11="xfce4-terminal" # xfce4 Terminal
 BUTTON12="gnome-terminal" # Gnome Terminal
 BUTTON13="firefox https://meet.jit.si/scrpcymmannemaus" # Gnome Terminal
 BUTTON14="$BROWSER1 $URL1"
-BUTTON15="xfce4-terminal -e 'tail -n80 -f $DEBUGFILE'"
+BUTTON15='xterm -fn 10x20 -e "tail -f /tmp/debug.log|ccze"'
+BUTTON16="xfce4-terminal -e 'tail -n80 -f $DEBUGFILE'"
 touch $DEBUGFILE
 yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und mehr..." --width 360 --height 250 --form --columns 2 --buttons-layout=center \
     --field="Front Kamera":fbtn         "$BUTTON1" \
@@ -41,7 +42,8 @@ yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und meh
     --field="GNOME Terminal":fbtn       "$BUTTON12" \
     --field="VC mit Manne Maus":fbtn    "$BUTTON13" \
     --field="Scrcpy (v4.1) Github":fbtn "$BUTTON14" \
-    --field="Log":fbtn                  "$BUTTON15" \
+    --field="Log Terminal":fbtn         "$BUTTON16" \
+    --field="Log XTerm     ":fbtn       "$BUTTON15" \
     --button="Ende:0" \
     &>$DEBUGFILE&
 exit 0
