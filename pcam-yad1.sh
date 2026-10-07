@@ -44,6 +44,6 @@ yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und meh
     --field="Scrcpy (v4.1) Github":fbtn "$BUTTON14" \
     --field="Log Terminal":fbtn         "$BUTTON16" \
     --field="Log XTerm     ":fbtn       "$BUTTON15" \
-    --button="Ende:0" \
+    --button="Beenden:0" \
     &>$DEBUGFILE&
 exit 0
