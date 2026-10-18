@@ -17,9 +17,9 @@ BUTTON4="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 -x -w
 BUTTON5="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.alphainventor.filemanager -x -w -f" #Dateimanager
 BUTTON6="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=av1 --start-app=com.android.settings -x -w -f" #Android Einstellungen
 BUTTON7="scrcpy --display-id=0 --max-fps=60 --print-fps -w" #Capture SmartPhone Screen
-BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --v4l2-sink=/dev/video0" # Webcam
+BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --no-audio-playback --v4l2-sink=/dev/video0" # Webcam
 BUTTON9="scrcpy --display-id=0 --new-display=800x600/160 --turn-screen-off --disable-screensaver --show-touches --video-codec=av1 --start-app=com.weawow -x -w -f" #Wetter
-BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-linux-x86_64-v4.1/scrcpy.1'" # Scrcpy Manpage 
+BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-linux-x86_64-v5.0.1/scrcpy.1'" # Scrcpy Manpage 
 BUTTON11="xfce4-terminal" # xfce4 Terminal
 BUTTON12="gnome-terminal" # Gnome Terminal
 BUTTON13="firefox https://meet.jit.si/scrpcymmannemaus" # Gnome Terminal
