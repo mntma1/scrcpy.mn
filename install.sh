@@ -8,10 +8,10 @@ sudo apt install adb fastboot yad -y;
 sudo cp -fv pcam-yad1.sh pcam-yad-long.sh webcam-yad.sh pcam.sh colors.env /usr/local/bin;
 cd /tmp
 wget https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-linux-x86_64-v5.0.1.tar.gz;
-tar xvzf scrcpy-linux-x86_64-v4.1.tar.gz;
+tar xvzf scrcpy-linux-x86_64-v5.0.1.tar.gz;
 sudo cp -afv /tmp/scrcpy-linux-x86_64-v5.0.1/ /usr/local/;
-sudo ln -sf /usr/local/scrcpy-linux-x86_64-v5.1/scrcpy /usr/local/bin/scrcpy;
-rm -rfv /tmp/scrcpy-linux-x86_64-v4.1*;
+sudo ln -sfv /usr/local/scrcpy-linux-x86_64-v5.0.1/scrcpy /usr/local/bin/scrcpy
+rm -rfv /tmp/scrcpy-linux-x86_64*;
 cd ~/;
 /usr/local/bin/pcam-yad1.sh;
 sleep 2;
