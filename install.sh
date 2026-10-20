@@ -5,7 +5,7 @@ source ./colors.env
 
 sudo rm -rfv /usr/local/scrcpy-linux*
 sudo apt install adb fastboot yad v4l-utils linux-headers-amd64 -y;
-sudo cp -fv pcam-yad1.sh pcam-yad-long.sh webcam-yad.sh pcam.sh colors.env /usr/local/bin;
+sudo cp -fv pcam-yad1.sh pcam-yad-long.sh webcam-yad.sh pcam.sh colors.env scrcpy-wlan.sh /usr/local/bin;
 cd /tmp
 wget https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-linux-x86_64-v5.0.1.tar.gz;
 tar xvzf scrcpy-linux-x86_64-v5.0.1.tar.gz;
