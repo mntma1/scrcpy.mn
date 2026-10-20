@@ -18,7 +18,7 @@ BUTTON4="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --vi
 BUTTON5="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --video-encoder=c2.qti.avc.encoder --start-app=com.alphainventor.filemanager -x -w -f" #Dateimanager
 BUTTON6="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --video-encoder=c2.qti.avc.encoder --start-app=com.android.settings -x -w -f" #Android Einstellungen
 BUTTON7="scrcpy --display-id=0 --max-fps=60 --print-fps -w" #Capture SmartPhone Screen
-BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=0 --camera-size=1920x1080 --no-audio-playback --v4l2-sink=/dev/video0" # Webcam
+BUTTON8="scrcpy --video-source=camera --camera-fps=30 --camera-facing=front --capture-orientation=270 --camera-size=1920x1080 --no-audio-playback --v4l2-sink=/dev/video0" # Webcam
 BUTTON9="scrcpy --display-id=0 --new-display=800x600/160 --turn-screen-off --disable-screensaver --show-touches --video-codec=h264 --video-encoder=c2.qti.avc.encoder --start-app=com.weawow -x -w -f" #Wetter
 BUTTON10="xfce4-terminal -e 'man /usr/local/scrcpy-linux-x86_64-v5.0.1/scrcpy.1'" # Scrcpy Manpage 
 BUTTON11="xfce4-terminal" # xfce4 Terminal
@@ -31,6 +31,8 @@ BUTTON16="xfce4-terminal -e 'tail -n80 -f $DEBUGFILE'"
 BUTTON17="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --video-encoder=c2.qti.avc.encoder --start-app=io.homeassistant.companion.android.minimal -x -w -f" #Home Assistant
 BUTTON18="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --video-encoder=c2.qti.avc.encoder --start-app=com.whatsapp -x -w -f" #WhatsApp
 BUTTON19="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --video-encoder=c2.qti.avc.encoder --start-app=com.facebook.stella -x -w" #Meta AI
+BUTTON20="/usr/local/bin/scrcpy-wlan.sh"
+
 touch $DEBUGFILE
 yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und mehr..." --width 360 --height 250 --form --columns 2 --buttons-layout=center \
     --field="Front Kamera":fbtn         "$BUTTON1" \
@@ -52,6 +54,7 @@ yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und meh
     --field="Home Assistant":fbtn       "$BUTTON17" \
     --field="WhatsApp":fbtn             "$BUTTON18" \
     --field="Meta AI":fbtn              "$BUTTON19" \
+    --field="WLAN":fbtn                 "$BUTTON20" \
     --button="Beenden:0" \
     &>$DEBUGFILE&
 exit 0
