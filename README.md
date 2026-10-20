@@ -76,8 +76,7 @@ scrcpy --list-apps
 ##### Hierzu muß das USB-Kabel eingesteckt sein 
 ```bash
 adb tcpip 5555
-adb connect 192.168.1.xxx
-# WLAN IP des Handy
+adb connect 192.168.xxx.xxx # WLAN IP des Handy
 ```
 ## 6. Überprüfe die adb-Verbindungen
 ```bash
