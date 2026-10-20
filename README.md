@@ -16,16 +16,16 @@
 ```  
 
 
-**scrcpy (v4.0) Projekt-Seite** ***[hier](https://github.com/Genymobile/scrcpy)***
+**scrcpy (v5.0.1) Projekt-Seite** ***[hier](https://github.com/Genymobile/scrcpy)***
 
 - **Videoanleitung** [hier](https://www.youtube.com/watch?v=c3ypUzVSYdQ)
 - EKIWI-BLOG [hier](https://ekiwi-blog.de/20466/android-bildschirmuebertragung-mit-scrcpy-ueber-usb-oder-wlan/)
-- **Download:** [scrcpy-linux-x86_64-v4.1.tar.gz](https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-linux-x86_64-v4.1.tar.gz)
+- **Download:** [scrcpy-linux-x86_64-v4.1.tar.gz](https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-linux-x86_64-v5.0.1.tar.gz)
 
 
 ```bash
 # mit wget im Terminal:
-wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x86_64-v4.0.tar.gz
+ wget https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-linux-x86_64-v5.0.1.tar.gz
 ```
 
 ## 1. Als User: Das Repository klonen und **scrcpy** installieren 
