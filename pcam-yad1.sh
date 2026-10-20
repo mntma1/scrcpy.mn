@@ -34,11 +34,11 @@ BUTTON19="scrcpy --display-id=0 --new-display=800x600/160 --video-codec=h264 --v
 BUTTON20="/usr/local/bin/scrcpy-wlan.sh"
 
 touch $DEBUGFILE
-yad --title " Scrcpy Menu" --text " Benutze deine Handykamera als Webcam und mehr..." --width 360 --height 250 --form --columns 2 --buttons-layout=center \
+yad --title " Scrcpy Menu" --text " Benutze dein Handy als Webcam und mehr..." --width 360 --height 250 --form --columns 2 --buttons-layout=center \
+    --field="Webcam":fbtn               "$BUTTON8" \
     --field="Front Kamera":fbtn         "$BUTTON1" \
     --field="Back Kanmera":fbtn         "$BUTTON2" \
     --field="Horiz. Kamera":fbtn        "$BUTTON3" \
-    --field="Webcam":fbtn               "$BUTTON8" \
     --field="Android Desktop":fbtn      "$BUTTON4" \
     --field="Dateimanager":fbtn         "$BUTTON5" \
     --field="Android Setup":fbtn        "$BUTTON6" \
