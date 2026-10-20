@@ -86,8 +86,7 @@ Ergebnis:
 ```text
 List of devices attached
 fff95c0b	device
-192.168.1.xxx:5555	device
-# WLAN IP des Handy
+192.168.xxx.xxx:5555	device # WLAN IP des Handy
 ```
 ## 8. Ziehe jetzt das USB-Kabel ab
 ```bash
