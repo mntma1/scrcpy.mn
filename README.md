@@ -48,10 +48,10 @@ git clone https://github.com/mntma1/scrcpy.mn
 cd scrcpy.mn
 sudo cp -v pcam.sh colors.env /usr/local/bin;
 cd ~/Downlad
-wget https://github.com/Genymobile/scrcpy/releases/download/v4.0/scrcpy-linux-x86_64-v4.0.tar.gz;
-tar xvzf scrcpy-linux-x86_64-v4.0.tar.gz;
-sudo cp -av scrcpy-linux-x86_64-v4.0 /usr/local;
-sudo ln -s /usr/local/scrcpy-linux-x86_64-v4.0/scrcpy /usr/local/bin/scrcpy
+wget https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-linux-x86_64-v5.0.1.tar.gz;
+tar xvzf scrcpy-linux-x86_64-v5.0.1.tar.gz;
+sudo cp -av scrcpy-linux-x86_64-v5.0.1 /usr/local;
+sudo ln -s /usr/local/scrcpy-linux-x86_64-v5.0.1/scrcpy /usr/local/bin/scrcpy
 cd ~/
 /usr/local/bin/pcam.sh
 exit 0
