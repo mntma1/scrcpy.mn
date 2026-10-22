@@ -60,7 +60,8 @@ exit 0
 ## 2. Starte das Menü 
 ```bash
 # Im Terminal feuere ab:
-Benutzer$: pcam.sh
+Benutzer$: pcam-yad1.sh #Grafisches Menü 
+Benutzer$: pcam.sh #Kosole Menü
 ```
 ## 3. Apps starten: Von Hand im Terminal:
 ```bash
