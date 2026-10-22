@@ -31,4 +31,3 @@ yad --title="Scrcpy Menu" \
     --button="Terminal:$BUTTON11" \
     --button="Ende:1" &>/dev/null&
 exit 0
-
