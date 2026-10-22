@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+IPADR=  #Trage hier die IP des Handys ein
 adb tcpip 5555;
-adb connect 192.168.17.39
+adb connect $IPADR
 exit 0
