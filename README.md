@@ -1,4 +1,4 @@
-# scrcpy - Script: pcam.sh 
+# Scrcpy Menü 
 ### Ermöglicht die Anzeige und Steuerung von über USB oder WLAN (über TCP/IP) angeschlossenen Android-Geräten. Es ist kein Root-Zugriff erforderlich.
 <img width="527" height="429" alt="grafik" src="https://github.com/user-attachments/assets/a165835d-281f-4b51-8251-e90f4e16a30a" />
 <img width="450" height="426" alt="grafik" src="https://github.com/user-attachments/assets/140fb496-564d-4284-a025-e97b016cdbba" />
